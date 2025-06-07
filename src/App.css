@@ -123,3 +123,6 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.hero-bg { background-image: url('./assets/hero-bg.jpg');}

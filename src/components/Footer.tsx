@@ -13,8 +13,7 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
-          </a>
+PREFERENCE          </a>
         </div>
 
         <div className="flex flex-col gap-2">
