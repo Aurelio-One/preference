@@ -10,21 +10,21 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Recherche de propriétaires",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Nous approchons directement des propriétaires dans les zones ciblées, même s’ils ne sont pas vendeurs, pour leur proposer une ouverture encadrée à la vente.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Encadrement contractuel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Nous structurons un contrat de droit de préférence clair, légal et équilibré. L’acheteur est prioritaire, le vendeur est indemnisé, sans se lier à une vente immédiate.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Intermédiation sécurisée",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Nous faisons le lien jusqu’à la fin du droit de préférence : suivi, levée d’option, mise en relation avec notaire si besoin. Vous êtes accompagné(e) à chaque étape.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -36,14 +36,13 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Services{" "}
             </span>
-            Services
+            PRÉFÉRENCE
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Une offre clé-en-main pour débloquer des biens inaccessibles et sécuriser votre avance.
           </p>
 
           <div className="flex flex-col gap-8">

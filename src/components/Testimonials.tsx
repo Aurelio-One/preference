@@ -17,45 +17,45 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    name: "Julie M.",
+    userName: "Acheteuse à Nantes",
+    comment:
+      "Grâce à PRÉFÉRENCE, j’ai pu sécuriser un droit sur un bien que je n’aurais jamais vu en ligne. Une vraie alternative à la chasse classique.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    name: "Hugo L.",
+    userName: "Propriétaire à Lyon",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "Je n’étais pas encore prêt à vendre, mais recevoir une prime sans rien signer m’a convaincu. Le système est bien pensé et respectueux.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    name: "Nadia R.",
+    userName: "Chasseuse immobilière",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "J’ai proposé PRÉFÉRENCE à deux de mes clients. Ils ont payé un droit d’accès prioritaire et attendent tranquillement leur tour. Top !",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    name: "Pierre C.",
+    userName: "Acheteur à Bordeaux",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "J’en avais marre des biens qui partent en 24h. Là, j’ai mon droit, je sais que je serai le premier appelé si le vendeur bouge.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    name: "Samira D.",
+    userName: "Propriétaire à Toulouse",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Je ne savais même pas que ça existait. J’ai touché 2 000 € sans vendre. Et si un jour je me décide, j’ai déjà un acheteur.",
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Thomas E.",
+    userName: "Agent indépendant",
+    comment:
+      "C’est parfait pour mes leads dormants. Je récupère une prime pour eux et peut leur rouvrir une perspective dans 6 mois ou plus.",
   },
 ];
 
@@ -66,17 +66,15 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        Ils ont testé
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          PRÉFÉRENCE
         </span>
-        This Landing Page
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Acheteurs, propriétaires ou professionnels, ils racontent pourquoi ils ont choisi ce modèle.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
@@ -87,14 +85,14 @@ export const Testimonials = () => {
               className="max-w-md md:break-inside-avoid overflow-hidden"
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <Avatar>
+         {/*        <Avatar>
                   <AvatarImage
                     alt=""
                     src={image}
                   />
                   <AvatarFallback>OM</AvatarFallback>
                 </Avatar>
-
+ */}
                 <div className="flex flex-col">
                   <CardTitle className="text-lg">{name}</CardTitle>
                   <CardDescription>{userName}</CardDescription>

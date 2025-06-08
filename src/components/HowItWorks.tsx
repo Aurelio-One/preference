@@ -10,27 +10,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "Vous ciblez un bien ou une zone",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Vous repérez un bien, une rue, ou un quartier tendu ? Vous nous indiquez vos critères de préférence.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "On approche le propriétaire",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Nous contactons le propriétaire pour lui proposer un droit de préférence. Il reste libre de vendre ou non.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Un contrat encadre la priorité",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Si le vendeur accepte, un contrat est signé : s’il décide de vendre dans les années à venir, vous serez prioritaire.",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "Une prime sans vente",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Le propriétaire touche une prime immédiate, sans mise en vente ni engagement de prix. Vous sécurisez votre avance.",
   },
 ];
 
@@ -41,15 +41,14 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Comment{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          ça fonctionne{" "}
         </span>
-        Step-by-Step Guide
+        avec PRÉFÉRENCE
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Un processus simple, contractuel, humain — pour vous donner une longueur d’avance.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

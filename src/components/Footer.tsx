@@ -13,153 +13,46 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-PREFERENCE          </a>
+            PRÉFÉRENCE
+          </a>
+          <p className="text-muted-foreground mt-4 text-sm">
+            Le droit de réserver un bien, avant même qu’il ne soit à vendre.
+          </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Github
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Acheteurs</h3>
+          <a href="#" className="opacity-60 hover:opacity-100">Comment ça marche</a>
+          <a href="#" className="opacity-60 hover:opacity-100">Rechercher une préférence</a>
+          <a href="#" className="opacity-60 hover:opacity-100">Tarifs</a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Propriétaires</h3>
+          <a href="#" className="opacity-60 hover:opacity-100">Proposer un bien</a>
+          <a href="#" className="opacity-60 hover:opacity-100">Prime de mise en attente</a>
+          <a href="#" className="opacity-60 hover:opacity-100">Exemples</a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Ressources</h3>
+          <a href="#faq" className="opacity-60 hover:opacity-100">FAQ</a>
+          <a href="/legal/notice.html" className="opacity-60 hover:opacity-100">Mentions légales</a>
+          <a href="/legal/terms.html" className="opacity-60 hover:opacity-100">CGU</a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Contact</h3>
+          <a href="mailto:hello@mapreferenceamoi.fr" className="opacity-60 hover:opacity-100">
+            hello@mapreferenceamoi.fr
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">LinkedIn</a>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
+        <h3 className="text-muted-foreground text-sm">
+          &copy; 2024 PRÉFÉRENCE – Tous droits réservés.
         </h3>
       </section>
     </footer>

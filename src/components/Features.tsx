@@ -18,36 +18,38 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Exprimez vos préférences",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Indiquez en quelques clics les biens que vous aimeriez acquérir si un jour ils étaient mis en vente — même s’ils ne le sont pas aujourd’hui.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Accordez-vous un droit de priorité",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Lorsque le propriétaire accepte, vous obtenez un véritable droit de préférence : s’il décide de vendre, il doit vous prévenir en premier.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Sécurisez votre avenir",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Avec PRÉFÉRENCE, vous ne passez plus à côté du bien parfait. Vous êtes notifié en priorité, avec le temps de vous positionner.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Droit de préférence",
+  "Alertes prioritaires",
+  "Sélection libre de biens",
+  "Accord vendeur signé",
+  "Zéro commission d’agence",
+  "Respect du cadre légal",
+  "Approche confidentielle",
+  "Compatible Notaires",
+  "Accessible en ligne",
 ];
+
+
 
 export const Features = () => {
   return (

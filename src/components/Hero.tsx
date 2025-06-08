@@ -1,40 +1,21 @@
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 
-export const Hero = () => {
+
+export function Hero() {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10 hero-bg">
-      <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
-            </span>{" "}
-            landing page
-          </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2>
-        </main>
-
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
-        </p>
-
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
-
+    <section className="w-full py-24 md:py-32 lg:py-40">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center text-center space-y-6">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            Ma préférence à moi
+          </h1>
+          <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            Réservez un droit de priorité sur un bien, avant même qu’il soit mis en vente.  
+            Un raccourci inédit pour les acheteurs frustrés, et une prime immédiate pour les propriétaires patients.
+          </p>
         </div>
       </div>
-
-
-      {/* Shadow effect */}
-      <div className="shadow"></div>
     </section>
   );
-};
+}
