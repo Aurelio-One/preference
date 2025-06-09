@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/card";
 
 interface TestimonialProps {
-  image: string;
   name: string;
   userName: string;
   comment: string;
@@ -15,42 +14,36 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
     name: "Julie M.",
     userName: "Acheteuse à Nantes",
     comment:
       "Grâce à PRÉFÉRENCE, j’ai pu sécuriser un droit sur un bien que je n’aurais jamais vu en ligne. Une vraie alternative à la chasse classique.",
   },
   {
-    image: "https://github.com/shadcn.png",
     name: "Hugo L.",
     userName: "Propriétaire à Lyon",
     comment:
       "Je n’étais pas encore prêt à vendre, mais recevoir une prime sans rien signer m’a convaincu. Le système est bien pensé et respectueux.",
   },
   {
-    image: "https://github.com/shadcn.png",
     name: "Nadia R.",
     userName: "Chasseuse immobilière",
     comment:
       "J’ai proposé PRÉFÉRENCE à deux de mes clients. Ils ont payé un droit d’accès prioritaire et attendent tranquillement leur tour. Top !",
   },
   {
-    image: "https://github.com/shadcn.png",
     name: "Pierre C.",
     userName: "Acheteur à Bordeaux",
     comment:
       "J’en avais marre des biens qui partent en 24h. Là, j’ai mon droit, je sais que je serai le premier appelé si le vendeur bouge.",
   },
   {
-    image: "https://github.com/shadcn.png",
     name: "Samira D.",
     userName: "Propriétaire à Toulouse",
     comment:
       "Je ne savais même pas que ça existait. J’ai touché 2 000 € sans vendre. Et si un jour je me décide, j’ai déjà un acheteur.",
   },
   {
-    image: "https://github.com/shadcn.png",
     name: "Thomas E.",
     userName: "Agent indépendant",
     comment:
@@ -78,7 +71,7 @@ export const Testimonials = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
+          ({ name, userName, comment }: TestimonialProps) => (
             <Card
               key={userName}
               className="max-w-md md:break-inside-avoid overflow-hidden"
