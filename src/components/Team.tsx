@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
 import team1img from '../assets/team1.webp'
 import team2img from '../assets/team2.webp'
 import team3img from '../assets/team3.webp'
@@ -17,97 +16,32 @@ interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
-  socialNetworks: SociaNetworkslProps[];
-}
-
-interface SociaNetworkslProps {
-  name: string;
-  url: string;
 }
 
 const teamList: TeamProps[] = [
   {
     imageUrl: team1img,
     name: "Thomas G.",
-    position: "CEO - Responsable Partenariats",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
+    position: "CEO - Responsable Partenariats"
   },
   {
     imageUrl: team2img,
     name: "Camille L.",
     position: "Juriste Immobilier",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
   },
   {
     imageUrl: team3img,
     name: "Romain C.",
-    position: "Développeur Produit",    
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
+    position: "Développeur Produit"
   },
   {
     imageUrl: team4img,
     name: "Nora B.",
-    position: "Chargée de communication",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
+    position: "Chargée de communication"
   },
 ];
 
 export const Team = () => {
-  const socialIcon = (iconName: string) => {
-    switch (iconName) {
-      case "Linkedin":
-        return <Linkedin size="20" />;
-      case "Facebook":
-        return <Facebook size="20" />;
-      case "Instagram":
-        return <Instagram size="20" />;
-    }
-  };
-
   return (
     <section id="team" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
@@ -123,7 +57,7 @@ export const Team = () => {
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
-        {teamList.map(({ imageUrl, name, position, socialNetworks }) => (
+        {teamList.map(({ imageUrl, name, position }) => (
           <Card
             key={name}
             className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
