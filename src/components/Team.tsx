@@ -29,8 +29,8 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: team1img,
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "Thomas G.",
+    position: "CEO - Responsable Partenariats",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -48,8 +48,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: team2img,
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Camille L.",
+    position: "Juriste Immobilier",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -67,23 +67,23 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: team3img,
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    name: "Romain C.",
+    position: "Développeur Produit",    
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
+        name: "Facebook",
+        url: "https://www.facebook.com/",
       },
     ],
   },
   {
     imageUrl: team4img,
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    name: "Nora B.",
+    position: "Chargée de communication",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -142,50 +142,31 @@ export const Team = () => {
             </CardHeader>
 
             <CardContent className="text-center pb-2">
-              {name === "Emma Smith" && (
+              {name === "Thomas G." && (
                 <p>
-                  Emma s’assure que chaque interaction avec PRÉFÉRENCE soit
-                  fluide et claire, de la prise de contact à la signature d’un
-                  accord.
+                  Thomas est en charge de la relation avec les propriétaires et les intermédiaires locaux. Il identifie les biens à fort potentiel et initie les discussions sur le droit de préférence.
                 </p>
               )}
-              {name === "John Doe" && (
+              {name === "Camille L." && (
                 <p>
-                  John conçoit les outils techniques qui permettent de garantir
-                  sécurité, confidentialité et performance.
+                  Camille structure les contrats et s’assure que chaque droit de préférence respecte un cadre légal clair et équilibré pour les deux parties.
                 </p>
               )}
-              {name === "Ashley Ross" && (
+              {name === "Romain C." && (
                 <p>
-                  Ashley transforme notre vision en interface simple, rapide et
-                  mobile-friendly.
+                 Romain développe les outils internes de PRÉFÉRENCE : interface de gestion, notifications, suivi des engagements et mise en relation sécurisée.
                 </p>
               )}
-              {name === "Bruce Rogers" && (
+              {name === "Nora B." && (
                 <p>
-                  Bruce veille à la robustesse de notre backend, au service
-                  d’une gestion fiable et légale des droits de préférence.
+Nora veille à la clarté de nos messages et à la cohérence de notre image auprès des acheteurs, des propriétaires et des partenaires. Elle s’assure que chaque étape soit compréhensible et rassurante.
+
                 </p>
               )}
             </CardContent>
 
             <CardFooter>
-              {socialNetworks.map(({ name, url }) => (
-                <div key={name}>
-                  <a
-                    rel="noreferrer noopener"
-                    href={url}
-                    target="_blank"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      size: "sm",
-                    })}
-                  >
-                    <span className="sr-only">{name} icon</span>
-                    {socialIcon(name)}
-                  </a>
-                </div>
-              ))}
+
             </CardFooter>
           </Card>
         ))}

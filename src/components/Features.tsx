@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/feature1.jpg";
+import image3 from "../assets/feature2.jpg";
+import image4 from "../assets/feature3.jpg";
 
 interface FeatureProps {
   title: string;
@@ -45,8 +45,6 @@ const featureList: string[] = [
   "Zéro commission d’agence",
   "Respect du cadre légal",
   "Approche confidentielle",
-  "Compatible Notaires",
-  "Accessible en ligne",
 ];
 
 
@@ -58,10 +56,11 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Les{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          avantages{" "}
         </span>
+         de PRÉFÉRENCE
       </h2>
 
       <div className="flex flex-wrap md:justify-center gap-4">
@@ -90,7 +89,7 @@ export const Features = () => {
               <img
                 src={image}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className="w-[400px] mx-auto"
               />
             </CardFooter>
           </Card>
