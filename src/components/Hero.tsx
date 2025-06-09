@@ -1,7 +1,3 @@
-import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
-
-
 export function Hero() {
   return (
     <section className="hero-bg text-white w-full py-36 md:py-42 lg:py-52">
