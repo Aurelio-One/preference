@@ -58,7 +58,6 @@ export const Navbar = () => {
 
           {/* mobile */}
           <span className="flex md:hidden">
-            <ModeToggle />
 
             <Sheet
               open={isOpen}
@@ -76,8 +75,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
-                  </SheetTitle>
+PRÉFÉRENCE                </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
                   {routeList.map(({ href, label }: RouteProps) => (
