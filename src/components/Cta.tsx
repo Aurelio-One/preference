@@ -1,6 +1,13 @@
 import { Button } from "./ui/button";
+import ModalForm from "../components/ModalForm";
+
+import { useState } from "react";
+
 
 export const Cta = () => {
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
   return (
     <section
       id="cta"
@@ -16,19 +23,24 @@ export const Cta = () => {
             </span>
             avant tout le monde
           </h2>
-          <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
+          <p className="text-xl mt-4 mb-8 lg:mb-0">
             En tant qu’acheteur, soyez le premier à être averti — et à pouvoir acheter — un bien promis, même s’il n’est pas encore en vente aujourd’hui.
           </p>
         </div>
 
         <div className="space-y-4 lg:col-start-2">
-          <Button className="w-full md:mr-4 md:w-auto">Trouver ma préférence</Button>
+          <Button 
+            className="w-full md:mr-4 md:w-auto" 
+            onClick={() => setModalOpen(true)}
+            >Trouver ma préférence</Button>
           <Button
             variant="outline"
             className="w-full md:w-auto"
           >
             Comprendre le concept
           </Button>
+                <ModalForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+
         </div>
       </div>
     </section>

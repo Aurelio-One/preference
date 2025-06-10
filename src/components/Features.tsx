@@ -24,7 +24,7 @@ const features: FeatureProps[] = [
     image: image4,
   },
   {
-    title: "Accordez-vous un droit de priorité",
+    title: "Accordez-vous la priorité",
     description:
       "Lorsque le propriétaire accepte, vous obtenez un véritable droit de préférence : s’il décide de vendre, il doit vous prévenir en premier.",
     image: image3,
@@ -32,7 +32,7 @@ const features: FeatureProps[] = [
   {
     title: "Sécurisez votre avenir",
     description:
-      "Avec <em>preference</em>, vous ne passez plus à côté du bien parfait. Vous êtes notifié en priorité, avec le temps de vous positionner.",
+      "Avec preference, vous ne passez plus à côté du bien parfait. Vous êtes notifié en priorité, avec le temps de vous positionner.",
     image: image,
   },
 ];

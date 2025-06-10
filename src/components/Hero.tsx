@@ -15,7 +15,7 @@ export function Hero() {
                                   <img
                           src={herologo}
                           alt="preference-hero-logo"
-                                                className="max-w-[500px]"
+                                                className=" sm:max-w-[250px] lg:max-w-[500px]"
 
                         />
           <p className="max-w-[700px] text-broken-white md:text-xl">

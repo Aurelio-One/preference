@@ -12,7 +12,7 @@ export const About = () => {
           <img
             src={pilot}
             alt=""
-            className="w-[300px] object-contain rounded-lg"
+            className="max-w-[300px] w-full object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">
@@ -22,7 +22,7 @@ export const About = () => {
                 </span>
                 de <em>preference</em>
               </h2>
-              <p className="text-xl text-muted-foreground mt-4">
+              <p className="text-xl mt-4">
                 <em>preference</em> est une alternative inédite à la chasse immobilière classique.  
                 Nous créons un pont entre les acheteurs frustrés et les propriétaires non vendeurs, 
                 en structurant des droits de préférence légaux, simples et humains.
