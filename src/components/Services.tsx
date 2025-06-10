@@ -38,7 +38,7 @@ export const Services = () => {
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               Services{" "}
             </span>
-            PRÉFÉRENCE
+            <em>preference</em>
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">

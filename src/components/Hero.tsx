@@ -10,7 +10,7 @@ export function Hero() {
       <div className="relative container mx-auto px-4 py-24">
         <div className="flex flex-col items-center text-center space-y-6">
 {/*           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            PRÉFÉRENCE
+            <em>preference</em>
           </h1> */}
                                   <img
                           src={herologo}

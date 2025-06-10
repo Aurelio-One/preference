@@ -48,7 +48,7 @@ export const Team = () => {
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           L’équipe{" "}
         </span>
-        derrière PRÉFÉRENCE
+        derrière <em>preference</em>
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
@@ -87,7 +87,7 @@ export const Team = () => {
               )}
               {name === "Romain C." && (
                 <p>
-                 Romain développe les outils internes de PRÉFÉRENCE : interface de gestion, notifications, suivi des engagements et mise en relation sécurisée.
+                 Romain développe les outils internes de <em>preference</em> : interface de gestion, notifications, suivi des engagements et mise en relation sécurisée.
                 </p>
               )}
               {name === "Nora B." && (

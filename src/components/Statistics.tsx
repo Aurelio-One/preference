@@ -15,7 +15,7 @@ export const Statistics = () => {
     },
     {
       quantity: "19",
-      description: "Ventes finalisées via PRÉFÉRENCE",
+      description: "Ventes finalisées via <em>preference</em>",
     },
     {
       quantity: "4.8/5",

@@ -57,7 +57,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3 className="text-muted-foreground text-sm">
-          &copy; 2024 PRÉFÉRENCE – Tous droits réservés.
+          &copy; 2024 <em>preference</em> – Tous droits réservés.
         </h3>
       </section>
     </footer>

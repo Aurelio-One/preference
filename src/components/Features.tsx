@@ -32,7 +32,7 @@ const features: FeatureProps[] = [
   {
     title: "Sécurisez votre avenir",
     description:
-      "Avec PRÉFÉRENCE, vous ne passez plus à côté du bien parfait. Vous êtes notifié en priorité, avec le temps de vous positionner.",
+      "Avec <em>preference</em>, vous ne passez plus à côté du bien parfait. Vous êtes notifié en priorité, avec le temps de vous positionner.",
     image: image,
   },
 ];
@@ -60,7 +60,7 @@ export const Features = () => {
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           avantages{" "}
         </span>
-         de PRÉFÉRENCE
+         de <em>preference</em>
       </h2>
 
       <div className="flex flex-wrap md:justify-center gap-4">
