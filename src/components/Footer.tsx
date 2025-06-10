@@ -1,4 +1,5 @@
-import { LogoIcon } from "./Icons";
+import navicon from "../assets/navlogo.png";
+
 
 export const Footer = () => {
   return (
@@ -12,8 +13,12 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            PRÉFÉRENCE
+      <img
+                          src={navicon}
+                          alt="preference-logo"
+                          className="max-w-[180px]"
+                        />
+
           </a>
           <p className="text-muted-foreground mt-4 text-sm">
             Le droit de réserver un bien, avant même qu’il ne soit à vendre.

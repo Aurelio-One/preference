@@ -8,13 +8,13 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
-import { LogoIcon } from "./Icons";
+import navicon from "../assets/navlogo.png";
+
 
 interface RouteProps {
   href: string;
@@ -49,8 +49,11 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              PREFERENCE
+                        <img
+                          src={navicon}
+                          alt="preference-logo"
+                          className="max-w-[180px]"
+                        />
             </a>
           </NavigationMenuItem>
 
@@ -72,10 +75,13 @@ export const Navbar = () => {
 
               <SheetContent side={"left"}>
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">
-PRÉFÉRENCE                </SheetTitle>
+               <img
+                          src={navicon}
+                          alt="preference-logo"
+                          className="max-w-[180px]"
+                        />
                 </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                <nav className="flex flex-col gap-2 mt-4">
                   {routeList.map(({ href, label }: RouteProps) => (
                     <a
                       rel="noreferrer noopener"
