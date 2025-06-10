@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 type Props = {
   isOpen: boolean;
@@ -19,7 +21,7 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 !mt-0">
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-xl p-8 relative animate-fadeIn">
         <button
           onClick={onClose}
@@ -43,9 +45,9 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
               onSubmit={() => setSubmitted(true)}
               
             >
-              <input type="hidden" name="form-name" value="preference" />
+              <Input type="hidden" name="form-name" value="preference" />
 
-              <input
+              <Input
                 type="email"
                 name="email"
                 placeholder="Votre e-mail"
@@ -53,7 +55,7 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
                 className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
               />
 
-              <input
+              <Input
                 type="text"
                 name="ville"
                 placeholder="Ville ou quartier préféré"
@@ -67,12 +69,18 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
                 className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
               ></textarea>
 
-              <button
-                type="submit"
-                className="w-full bg-black text-white py-3 rounded-md text-lg font-medium hover:bg-gray-900 transition"
-              >
-                Envoyer ma demande
-              </button>
+              
+
+      
+
+              <Button 
+               type="submit"
+
+            className="w-full md:mr-4" 
+
+            >Envoyer ma demande
+</Button>
+
             </form>
           </>
         ) : (
