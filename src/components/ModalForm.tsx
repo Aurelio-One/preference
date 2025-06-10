@@ -35,7 +35,7 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
               Trouvons votre préférence idéale
             </h2>
 
-            <form netlify
+            <form
               name="preference"
               method="POST"
               data-netlify="true"
