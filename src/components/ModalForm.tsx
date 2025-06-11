@@ -22,7 +22,7 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 !mt-0">
-      <div className="bg-white rounded-xl shadow-2xl w-full max-w-xl p-8 relative animate-fadeIn">
+      <div className="bg-white rounded-xl shadow-2xl w-full max-w-xl p-8 relative animate-fadeIn bg-broken-white">
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-2xl font-light"

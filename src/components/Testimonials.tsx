@@ -17,7 +17,7 @@ const testimonials: TestimonialProps[] = [
     name: "Julie M.",
     userName: "Acheteuse à Nantes",
     comment:
-      "Grâce à PRÉFÉRENCE, j’ai pu sécuriser un droit sur un bien que je n’aurais jamais vu en ligne. Une vraie alternative à la chasse classique.",
+      "Grâce à preference, j’ai pu sécuriser un droit sur un bien que je n’aurais jamais vu en ligne. Une vraie alternative à la chasse classique.",
   },
   {
     name: "Hugo L.",
@@ -29,7 +29,7 @@ const testimonials: TestimonialProps[] = [
     name: "Nadia R.",
     userName: "Chasseuse immobilière",
     comment:
-      "J’ai proposé PRÉFÉRENCE à deux de mes clients. Ils ont payé un droit d’accès prioritaire et attendent tranquillement leur tour. Top !",
+      "J’ai proposé preference à deux de mes clients. Ils ont payé un droit d’accès prioritaire et attendent tranquillement leur tour. Top !",
   },
   {
     name: "Pierre C.",
@@ -61,7 +61,7 @@ export const Testimonials = () => {
         Ils ont testé
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          PRÉFÉRENCE
+          <em>preference</em>
         </span>
       </h2>
 

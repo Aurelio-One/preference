@@ -154,8 +154,8 @@
   background-color: rgb(240, 230, 220);
 }
 .text-broken-white {
-  color: 
-}
+  color: rgb(240, 230, 220);
+}input { background-color: white !important;}
 
 html, body {
   overflow-x: hidden;
