@@ -19,7 +19,7 @@ const LandlordModal = ({ isOpen, onClose }: Props) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 !mt-0">
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-xl p-8 relative animate-fadeIn bg-broken-white">
         <button
           onClick={onClose}

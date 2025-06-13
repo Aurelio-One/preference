@@ -27,21 +27,21 @@ export const Cta = () => {
           </p>
         </div>
 
-        <div className="space-y-4 lg:col-start-2 flex flex-col gap-4">
+        <div className="space-y-4 lg:col-start-2 flex gap-4">
           <Button
             className="w-full md:mr-4 md:w-auto"
             onClick={() => setModalOpen(true)}
           >
             Trouver ma préférence
           </Button>
-
-          <Button
+        <Button
             variant="secondary"
-            className="w-full md:w-auto"
+            className="w-full md:mr-4 md:w-auto !mt-0"
             onClick={() => setLandlordModalOpen(true)}
           >
             Proposer un bien
           </Button>
+  
 
           {/* Modals */}
           <ModalForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />

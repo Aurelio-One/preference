@@ -1,7 +1,10 @@
+import { useState } from "react";
 import navicon from "../assets/navlogo.png";
-
+import LandlordModal from "../components/LandlordModal";
 
 export const Footer = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
@@ -13,12 +16,11 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-      <img
-                          src={navicon}
-                          alt="preference-logo"
-                          className="max-w-[180px]"
-                        />
-
+            <img
+              src={navicon}
+              alt="preference-logo"
+              className="max-w-[180px]"
+            />
           </a>
           <p className="text-muted-foreground mt-4 text-sm">
             Le droit de réserver un bien, avant même qu’il ne soit à vendre.
@@ -34,7 +36,16 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Propriétaires</h3>
-          <a href="#" className="text-muted-foreground">Proposer un bien</a>
+          <a
+            href="#"
+            className="text-muted-foreground"
+            onClick={(e) => {
+              e.preventDefault();
+              setModalOpen(true);
+            }}
+          >
+            Proposer un bien
+          </a>
           <a href="#" className="text-muted-foreground">Prime de mise en attente</a>
           <a href="#" className="text-muted-foreground">Exemples</a>
         </div>
@@ -48,7 +59,7 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Contact</h3>
-                    <a href="www.preference.immo" className="text-muted-foreground">
+          <a href="https://www.preference.immo" className="text-muted-foreground">
             www.preference.immo
           </a>
           <a href="mailto:contact@preference.immo" className="text-muted-foreground">
@@ -62,6 +73,9 @@ export const Footer = () => {
           &copy; 2024 <em>preference</em> – Tous droits réservés.
         </h3>
       </section>
+
+      {/* Landlord modal rendu conditionnellement */}
+      <LandlordModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
     </footer>
   );
 };
