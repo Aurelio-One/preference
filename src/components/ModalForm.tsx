@@ -46,9 +46,20 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
   className="space-y-6"
   action="/"
 onSubmit={(e) => {
-    void e;
-  console.log('form submitted')
-  setSubmitted(true);
+  e.preventDefault();
+  const form = e.target as HTMLFormElement;
+  const formData = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    body: formData,
+  })
+    .then(() => {
+      setSubmitted(true);
+    })
+    .catch((error) => {
+      console.error("Form submission error:", error);
+    });
 }}
 >
 
