@@ -45,10 +45,11 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
   data-netlify="true"
   className="space-y-6"
   action="/"
-
-  onSubmit={(e) => setSubmitted(true)}>
-
-
+onSubmit={(e) => {
+  console.log('form submitted')
+  setSubmitted(true);
+}}
+>
 
 
   <input type="hidden" name="form-name" value="preference" />
