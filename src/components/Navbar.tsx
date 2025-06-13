@@ -15,6 +15,11 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import navicon from "../assets/navlogo.png";
 
+import { Button } from "./ui/button";
+import ModalForm from "../components/ModalForm";
+
+
+
 
 interface RouteProps {
   href: string;
@@ -39,6 +44,8 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+      const [isModalOpen, setModalOpen] = useState(false);
+
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-broken-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -93,7 +100,12 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-
+            <Button 
+            className="w-full md:mr-4 md:w-auto" 
+            onClick={() => setModalOpen(true)}
+            >Trouver ma préférence
+            </Button>
+            <ModalForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
                 </nav>
               </SheetContent>
             </Sheet>
@@ -113,6 +125,12 @@ export const Navbar = () => {
                 {route.label}
               </a>
             ))}
+            <Button 
+            className="w-full md:mr-4 md:w-auto" 
+            onClick={() => setModalOpen(true)}
+            >Trouver ma préférence
+            </Button>
+            <ModalForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
           </nav>
 
         </NavigationMenuList>

@@ -48,10 +48,12 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Contact</h3>
-          <a href="mailto:hello@mapreferenceamoi.fr" className="text-muted-foreground">
-            hello@mapreferenceamoi.fr
+                    <a href="www.preference.immo" className="text-muted-foreground">
+            www.preference.immo
           </a>
-          <a href="#" className="text-muted-foreground">LinkedIn</a>
+          <a href="mailto:contact@preference.immo" className="text-muted-foreground">
+            contact@preference.immo
+          </a>
         </div>
       </section>
 
