@@ -44,9 +44,9 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
   method="POST"
   data-netlify="true"
   className="space-y-6"
-    action="/"
+  action="/"
 
-  onSubmit={() => setSubmitted(true)}>
+  onSubmit={(e) => setSubmitted(true)}>
 
 
 
