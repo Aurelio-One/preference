@@ -36,7 +36,7 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
         {!submitted ? (
           <>
             <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
-              Trouvons votre préférence idéale
+              Trouvons votre préférence
             </h2>
 
  <form
