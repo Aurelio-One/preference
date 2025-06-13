@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Select } from "./ui/select";
 
 type Props = {
   isOpen: boolean;
@@ -37,51 +39,85 @@ const ModalForm = ({ isOpen, onClose }: Props) => {
               Trouvons votre préférence idéale
             </h2>
 
-            <form
-              name="preference"
-              method="POST"
-              data-netlify="true"
-              className="space-y-4"
-              onSubmit={() => setSubmitted(true)}
-              
-            >
-              <Input type="hidden" name="form-name" value="preference" />
+ <form
+  name="preference"
+  method="POST"
+  data-netlify="true"
+  className="space-y-6"
+    action="/"
 
-              <Input
-                type="email"
-                name="email"
-                placeholder="Votre e-mail"
-                required
-                className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-              />
+  onSubmit={() => setSubmitted(true)}>
 
-              <Input
-                type="text"
-                name="ville"
-                placeholder="Ville ou quartier préféré"
-                className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-              />
 
-              <textarea
-                name="message"
-                placeholder="Décrivez ce que vous cherchez"
-                rows={4}
-                className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
-              ></textarea>
 
-              
 
-      
+  <input type="hidden" name="form-name" value="preference" />
 
-              <Button 
-               type="submit"
 
-            className="w-full md:mr-4" 
+  <Input
+    type="email"
+    name="email"
+    placeholder="Votre e-mail"
+    required
+  />
 
-            >Envoyer ma demande
-</Button>
+  <Input
+    type="tel"
+    name="telephone"
+    placeholder="Votre numéro de téléphone (optionnel)"
+  />
 
-            </form>
+  <Input
+    type="text"
+    name="ville"
+    placeholder="Ville ou quartier recherché"
+    required
+  />
+
+  <Select name="type_bien" required>
+    <option value="">Type de bien recherché</option>
+    <option value="appartement">Appartement</option>
+    <option value="maison">Maison</option>
+    <option value="investissement">Investissement locatif</option>
+    <option value="autre">Autre</option>
+  </Select>
+
+  <Input
+    type="text"
+    name="budget"
+    placeholder="Budget maximal (€)"
+    required
+  />
+
+  <Select name="delai" required>
+    <option value="">Dans quel délai souhaitez-vous acheter ?</option>
+    <option value="urgent">Très rapidement (moins d'1 mois)</option>
+    <option value="court">1 à 3 mois</option>
+    <option value="moyen">3 à 6 mois</option>
+    <option value="long">+ de 6 mois</option>
+  </Select>
+
+  <Textarea
+    name="message"
+    placeholder="Décrivez ce que vous cherchez : type de bien, critères essentiels, ambiance du quartier, etc."
+    rows={5}
+    required
+  />
+
+  <Button
+    type="submit"
+    className="w-full bg-[#c58b75] hover:bg-[#b37764] text-white font-medium py-3 rounded-md transition"
+  >
+    Envoyer ma demande
+  </Button>
+
+  {submitted && (
+    <p className="text-center text-green-700 mt-2">
+      Merci pour votre demande. Nous reviendrons vers vous très rapidement.
+    </p>
+  )}
+</form>
+
           </>
         ) : (
           <div className="text-center py-12">

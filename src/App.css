@@ -87,7 +87,9 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 15 38.1% 89.6%;
-    --input: 240 5.9% 90%;
+    --input: 240 5.9% 100%;
+    --select: 240 5.9% 100%;
+    --textarea: 240 5.9% 100%;
     --ring: 142.1 76.2% 36.3%;
     --radius: 0.5rem;
   }
@@ -155,7 +157,7 @@
 }
 .text-broken-white {
   color: rgb(240, 230, 220);
-}input { background-color: white !important;}
+}
 
 html, body {
   overflow-x: hidden;
