@@ -60,17 +60,17 @@ export const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Contact</h3>
           <a href="https://www.preference.immo" className="text-muted-foreground">
-            www.preference.immo
+            preference.immo
           </a>
           <a href="mailto:contact@preference.immo" className="text-muted-foreground">
-            contact@preference.immo
+            contact@
           </a>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
         <h3 className="text-muted-foreground text-sm">
-          &copy; 2024 <em>preference</em> – Tous droits réservés.
+          &copy; 2025 <em>preference</em> – Tous droits réservés.
         </h3>
       </section>
 
